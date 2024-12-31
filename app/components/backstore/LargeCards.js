@@ -6,31 +6,31 @@ export default function LargeCards() {
   const orderStats = [
     {
         period: 'Today Order',
-        sales: 'N1,000',
+        sales: '5670',
         color: 'bg-green-600',
         icon: <Layers/>
     },
     {
         period: 'Yesterday Sales',
-        sales: 'N1,000',
+        sales: '145,000',
         color: 'bg-purple-600',
         icon: <Layers/>
     },
     {
         period: 'This Month',
-        sales: 'N1,000',
+        sales: '457,000',
         color: 'bg-blue-600',
         icon: <ShoppingCart/>
     },
     {
         period: 'Last Month',
-        sales: 'N1,000',
+        sales: '768,000',
         color: 'bg-orange-600',
         icon: <CreditCard/>
     },
     {
         period: 'All Time Sales',
-        sales: 'N1,000',
+        sales: '1,827,400',
         color: 'bg-red-600',
         icon: <CreditCard/>
     },

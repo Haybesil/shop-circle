@@ -1,3 +1,4 @@
+import DashboardCharts from '@/app/components/backstore/DashboardCharts'
 import Headings from '@/app/components/backstore/Headings'
 import LargeCards from '@/app/components/backstore/LargeCards'
 import SmallCards from '@/app/components/backstore/SmallCards'
@@ -9,9 +10,10 @@ export default function page() {
       <Headings title="Dashboard Overview"/>
       {/* Large cards */}
       <LargeCards/>
-      <SmallCards/>
       {/* Small cards */}
+      <SmallCards/>
       {/* charts */}
+      <DashboardCharts/>
       {/* tables */}
     </div>
   )
