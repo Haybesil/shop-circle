@@ -7,31 +7,31 @@ export default function LargeCards() {
     {
         period: 'Today Order',
         sales: '5670',
-        color: 'bg-green-600',
+        color: 'bg-gray-200',
         icon: <Layers/>
     },
     {
         period: 'Yesterday Sales',
         sales: '145,000',
-        color: 'bg-purple-600',
+        color: 'bg-gray-200',
         icon: <Layers/>
     },
     {
         period: 'This Month',
         sales: '457,000',
-        color: 'bg-blue-600',
+        color: 'bg-gray-200',
         icon: <ShoppingCart/>
     },
     {
         period: 'Last Month',
         sales: '768,000',
-        color: 'bg-orange-600',
+        color: 'bg-gray-200',
         icon: <CreditCard/>
     },
     {
         period: 'All Time Sales',
         sales: '1,827,400',
-        color: 'bg-red-600',
+        color: 'bg-gray-200',
         icon: <CreditCard/>
     },
   ]

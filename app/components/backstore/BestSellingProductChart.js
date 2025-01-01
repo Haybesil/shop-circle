@@ -38,7 +38,7 @@ export default function BestSellingProductChart() {
         plugins: {
             legend: {
                 labels: {
-                    color: 'rgb(255, 255, 255)', // Adjusts the legend text color
+                    color: '#306ED6', // Adjusts the legend text color
                     font: {
                         size: 14, // Adjusts the font size
                         weight: 'bold', // Adjusts the font weight
@@ -70,11 +70,11 @@ export default function BestSellingProductChart() {
     }
 
     return (
-        <div className='bg-blue-700 p-8 rounded-lg'>
-            <h2 className='text-blue-50 text-xl font-bold mb-4'>Best Selling Product</h2>
+        <div className='bg-gray-200 p-8 rounded-lg'>
+            <h2 className='text-blue-600 text-xl font-bold mb-4'>Best Selling Product</h2>
             {/* Chart */}
             <div className='mt-8'>
-                <Pie data={data} options={options} />
+                <Pie data={data} options={options} className=''/>
             </div>
         </div>
     )
