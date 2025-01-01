@@ -42,23 +42,23 @@ export default function WeeklySalesChart() {
 
       const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
-      const data = {
-        labels,
-        datasets: [
-          {
-            label: 'Dataset 1',
-            data: labels.map(() => faker.number.int({ min: -1000, max: 1000 })),
-            borderColor: 'rgb(255, 99, 132)',
-            backgroundColor: 'rgba(255, 99, 132, 0.5)',
-          },
+    //   const data = {
+    //     labels,
+    //     datasets: [
+    //       {
+    //         label: 'Dataset 1',
+    //         data: labels.map(() => faker.number.int({ min: -1000, max: 1000 })),
+    //         borderColor: 'rgb(255, 99, 132)',
+    //         backgroundColor: 'rgba(255, 99, 132, 0.5)',
+    //       },
         //   {
         //     label: 'Dataset 2',
         //     data: labels.map(() => faker.number.int({ min: -1000, max: 1000 })),
         //     borderColor: 'rgb(53, 162, 235)',
         //     backgroundColor: 'rgba(53, 162, 235, 0.5)',
         //   },
-        ],
-      };
+        // ],
+    //   };
       
 
     const tabs = [
@@ -131,7 +131,10 @@ export default function WeeklySalesChart() {
                             return (
                                 <div key={i}>
                                     
-                                    <Line options={options} data={data} />
+                                    <Line options={options} data={{
+                        labels,
+                        datasets: [tab.data],
+                    }} />
                                 </div>
                             )
                         } else {
