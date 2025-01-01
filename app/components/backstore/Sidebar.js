@@ -14,8 +14,8 @@ import { SidebarDropDown } from './SidebarDropDown';
 export default function Sidebar() {
   return (
 
-    <nav className='sidebar'>
-      <div className='bg-blue-700 w-52 h-screen text-blue-50 p-3 fixed left-0 top-0 shadow-md sidebar-top-wrapper'>
+    <nav className=''>
+      <div className='bg-blue-700 w-60 h-screen text-blue-50 p-3 fixed left-0 top-0 shadow-md sidebar-top-wrapper'>
         <div>
           <Link href="#" className=''>
             <img className='' src="/assets/logo.png" alt="" />
@@ -37,7 +37,7 @@ export default function Sidebar() {
 
 
         <div className="md:flex">
-          <ul className="flex-column space-y space-y-4 text-sm font-medium md:me-4 mb-4 md:mb-0">
+          <ul className="flex-column space-y space-y-4 text-sm font-medium ml-5 md:me-4 mb-4 md:mb-0">
 
             {/* Dropdown */}
 
