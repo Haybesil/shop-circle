@@ -82,7 +82,7 @@ export default function Sidebar() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="inline-flex items-center px-4 py-3 text-blue-500 bg-blue-50 rounded-lg active w-full " aria-current="page">
+              <Link href="/dashboard/staff" className="inline-flex items-center px-4 py-3 text-blue-500 bg-blue-50 rounded-lg active w-full " aria-current="page">
                 <img className='w-4 h-4 me-2' src="/assets/staff.svg" alt="" />
                 Staffs
               </Link>
