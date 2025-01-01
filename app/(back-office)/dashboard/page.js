@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='pl-52'>
+    <div className='pl-60'>
       <Headings title="Dashboard Overview"/>
       {/* Large cards */}
       <LargeCards/>
