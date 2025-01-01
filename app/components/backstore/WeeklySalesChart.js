@@ -1,17 +1,86 @@
 'use client'
 
 import React, { useState } from 'react'
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
+import { faker } from '@faker-js/faker';
+
 
 export default function WeeklySalesChart() {
+
+    ChartJS.register(
+        CategoryScale,
+        LinearScale,
+        PointElement,
+        LineElement,
+        Title,
+        Tooltip,
+        Legend
+      );
+
+      const options = {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: false,
+            text: 'Chart.js Line Chart',
+          },
+        },
+      };
+
+      const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+
+      const data = {
+        labels,
+        datasets: [
+          {
+            label: 'Dataset 1',
+            data: labels.map(() => faker.number.int({ min: -1000, max: 1000 })),
+            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+          },
+        //   {
+        //     label: 'Dataset 2',
+        //     data: labels.map(() => faker.number.int({ min: -1000, max: 1000 })),
+        //     borderColor: 'rgb(53, 162, 235)',
+        //     backgroundColor: 'rgba(53, 162, 235, 0.5)',
+        //   },
+        ],
+      };
+      
 
     const tabs = [
         {
             title: 'Sales',
             type: 'sales',
+            data: {
+                    label: 'Dataset 2',
+                    data: labels.map(() => faker.number.int({ min: -1000, max: 1000 })),
+                    borderColor: 'rgb(53, 162, 235)',
+                    backgroundColor: 'rgba(53, 162, 235, 0.5)',
+                  },
         },
         {
             title: 'Orders',
             type: 'orders',
+            data: {
+                label: 'Dataset 1',
+                data: labels.map(() => faker.number.int({ min: -1000, max: 1000 })),
+                borderColor: 'rgb(255, 99, 132)',
+                backgroundColor: 'rgba(255, 99, 132, 0.5)',
+              },
         }
     ];
 
@@ -60,7 +129,10 @@ export default function WeeklySalesChart() {
                     tabs.map((tab, i) => {
                         if (chartToDisplay === tab.type) {
                             return (
-                                <h2 key={i}>{tab.title}</h2>
+                                <div key={i}>
+                                    
+                                    <Line options={options} data={data} />
+                                </div>
                             )
                         } else {
                             return null
