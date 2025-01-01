@@ -1,10 +1,9 @@
-import Link from 'next/link'
 import React from 'react'
 
 export default function Headings({ title }) {
   return (
     <div>
-      <Link href='/dashboard/coupons' className='text-2xl font-semibold text-blue-500'>{title}</Link>
+      <h2 className='text-2xl font-semibold text-blue-500'>{title}</h2>
     </div>
   )
 }
