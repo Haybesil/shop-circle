@@ -8,7 +8,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { SidebarDropDown } from './SidebarDropDown';
+import { CatalogueDropDown } from './CatalogueDropDown';
 
 
 export default function Sidebar() {
@@ -56,13 +56,13 @@ export default function Sidebar() {
             {/* <SidebarDropDown/> */}
 
             <li>
-              <Link href="/dashboard" className="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-blue-50 hover:bg-gray-100 w-44 text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
+              <Link href="/vendor/dashboard" className="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-blue-50 hover:bg-gray-100 w-44 text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
                 <svg className="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18"><path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" /></svg>
                 Dashboard
               </Link>
             </li>
 
-            <SidebarDropDown/>
+            <CatalogueDropDown/>
             {/* <li>
               <Link href="#" className="inline-flex items-center px-4 py-3 text-white bg-blue-600 rounded-lg active w-full " aria-current="page">
                 <img className='w-4 h-4 me-2' src="/assets/catalogue.svg" alt="" />
@@ -70,32 +70,32 @@ export default function Sidebar() {
               </Link>
             </li> */}
             <li>
-              <Link href="/dashboard/customers" className="inline-flex items-center px-4 py-3 text-blue-500 bg-blue-50 rounded-lg active w-full " aria-current="page">
+              <Link href="/vendor/dashboard/customers" className="inline-flex items-center px-4 py-3 text-blue-500 bg-blue-50 rounded-lg active w-full " aria-current="page">
                 <img className='w-4 h-4 me-2' src="/assets/customer.svg" alt="" />
                 Customers
               </Link>
             </li>
             <li>
-              <Link href="/dashboard/orders" className="inline-flex items-center px-4 py-3 text-white bg-blue-600 rounded-lg active w-full " aria-current="page">
+              <Link href="/vendor/dashboard/orders" className="inline-flex items-center px-4 py-3 text-white bg-blue-600 rounded-lg active w-full " aria-current="page">
                 <img className='w-4 h-4 me-2' src="/assets/order.svg" alt="" />
                 Orders
               </Link>
             </li>
             <li>
-              <Link href="/dashboard/staff" className="inline-flex items-center px-4 py-3 text-blue-500 bg-blue-50 rounded-lg active w-full " aria-current="page">
+              <Link href="/vendor/dashboard/staff" className="inline-flex items-center px-4 py-3 text-blue-500 bg-blue-50 rounded-lg active w-full " aria-current="page">
                 <img className='w-4 h-4 me-2' src="/assets/staff.svg" alt="" />
                 Staffs
               </Link>
             </li>
             <li>
-              <Link href="//dashboard/store" className="inline-flex items-center px-4 py-3 text-white bg-blue-600 rounded-lg active w-full " aria-current="page">
+              <Link href="/vendor/dashboard/store" className="inline-flex items-center px-4 py-3 text-white bg-blue-600 rounded-lg active w-full " aria-current="page">
                 <img className='w-4 h-4 me-2' src="/assets/online-store.svg" alt="" />
                 Online Store
               </Link>
             </li>
 
             <li>
-              <Link href="/dashboard/settings" className="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-blue-50 hover:bg-gray-100 w-full text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
+              <Link href="/vendor/dashboard/settings" className="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-blue-50 hover:bg-gray-100 w-full text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
                 <svg className="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
                 </svg>
@@ -111,6 +111,8 @@ export default function Sidebar() {
                 Contact
               </Link>
             </li>
+
+            <h2>Log Out</h2>
           </ul>
         </div>
 

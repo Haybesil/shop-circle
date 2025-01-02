@@ -33,7 +33,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-export function SidebarDropDown() {
+export function CatalogueDropDown() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild className="">
@@ -54,27 +54,27 @@ export function SidebarDropDown() {
                 <DropdownMenuGroup>
                     <DropdownMenuItem>
                         <User />
-                        <Link href='/dashboard/products'>Products</Link>
+                        <Link href='/vendor/dashboard/products'>Products</Link>
                         <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
                         <CreditCard />
-                        <Link href='/dashboard/categories'>Categories</Link>
+                        <Link href='/vendor/dashboard/categories'>Categories</Link>
                         <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
                         <Settings />
-                        <Link href='/dashboard/banners'>Banner</Link>
+                        <Link href='/vendor/dashboard/banners'>Banner</Link>
                         <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
                         <Keyboard />
-                        <Link href='/dashboard/attributes'>Attributes</Link>
+                        <Link href='/vendor/dashboard/attributes'>Attributes</Link>
                         <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
                         <Keyboard />
-                        <Link href='/dashboard/coupons'>Coupons</Link>
+                        <Link href='/vendor/dashboard/coupons'>Coupons</Link>
                         <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
                     </DropdownMenuItem>
                 </DropdownMenuGroup>
