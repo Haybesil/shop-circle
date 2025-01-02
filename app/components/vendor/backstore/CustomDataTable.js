@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import data from '../../../../data.json'
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function CustomDataTable() {
 
@@ -95,7 +96,7 @@ export default function CustomDataTable() {
                     <span className="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing <span className="font-semibold text-gray-900 dark:text-white">{itemStartIndex}-{itemEndIndex}</span> of <span className="font-semibold text-gray-900 dark:text-white">{data.length}</span></span>
                     <ul className="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8 mb-2 mr-2">
                         <li>
-                            <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage == 1} className="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</button>
+                            <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage == 1} className="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"><ChevronLeft/></button>
                         </li>
                         {Array.from({ length: totalPages }, (_, index) => {
                             const pageNumber = index + 1;
@@ -105,8 +106,8 @@ export default function CustomDataTable() {
                                         onClick={() => setCurrentPage(pageNumber)}
                                         className={`flex items-center justify-center px-3 h-8 leading-tight border 
                             ${currentPage === pageNumber
-                                                ? 'text-blue-600 bg-blue-50 hover:bg-blue-100 hover:text-blue-700'
-                                                : 'text-gray-500 bg-white hover:bg-gray-100 hover:text-gray-700'}
+                                                ? 'text-gray-50 bg-blue-600 hover:bg-blue-300 hover:text-blue-700'
+                                                : 'text-gray-500 bg-white hover:bg-gray-300 hover:text-gray-700'}
                             border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white`}
                                     >
                                         {pageNumber}
@@ -115,7 +116,7 @@ export default function CustomDataTable() {
                             );
                         })}
                         <li>
-                            <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage == totalPages} className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</button>
+                            <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage == totalPages} className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"><ChevronRight/></button>
                         </li>
                     </ul>
                 </nav>
