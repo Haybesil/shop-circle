@@ -16,6 +16,7 @@ import {
   User,
   UserPlus,
   Users,
+  Bell,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -32,7 +33,9 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
+
+
 
 export function CatalogueDropDown() {
   return (
@@ -85,7 +88,7 @@ export function CatalogueDropDown() {
 }
 
 
-export function ProfileDropDown() {
+export const ProfileDropDown = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="">
@@ -149,8 +152,32 @@ export function ProfileDropDown() {
 }
 
 
+export function NotificationDropDown() {
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger>
+        <div type="button" className="relative inline-flex items-center p-3 text-sm font-medium text-center text-white bg-transparent rounded-lg ">
+          <Bell className='text-green-600' />
+          <span className="sr-only">Notifications</span>
+          <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 rounded-full top-0 start-2">2</div>
 
-export const NotificationDropDown = () => {
+        </div>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent>
+        <DropdownMenuLabel>Notifications</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem>Profile</DropdownMenuItem>
+        <DropdownMenuItem>Billing</DropdownMenuItem>
+        <DropdownMenuItem>Team</DropdownMenuItem>
+        <DropdownMenuItem>Subscription</DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
+}
+
+
+
+export const NotificationDropDownToUse = () => {
   return (
     <div>
       <button id="dropdownNotificationButton" data-dropdown-toggle="dropdownNotification" className="relative inline-flex items-center text-sm font-medium text-center text-gray-500 hover:text-gray-900 focus:outline-none dark:hover:text-white dark:text-gray-400" type="button">
