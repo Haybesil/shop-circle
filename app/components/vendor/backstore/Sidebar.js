@@ -8,7 +8,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { CatalogueDropDown } from './CatalogueDropDown';
+import { CatalogueDropDown } from './DropDown';
 import { LogoutButton } from '../../ui/Button';
 
 
