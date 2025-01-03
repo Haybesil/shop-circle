@@ -102,7 +102,7 @@ export const ProfileDropDown = () => {
         </div>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 mr-5">
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
