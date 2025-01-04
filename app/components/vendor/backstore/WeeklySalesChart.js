@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { useTheme } from 'next-themes'; // Import useTheme
+import { useTheme } from 'next-themes'; 
 import {
   Chart as ChartJS,
   CategoryScale,
