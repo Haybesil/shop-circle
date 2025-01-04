@@ -11,7 +11,7 @@ export default function layout({ children }) {
       <div className='w-full'>
         {/* header */}
         <Header />
-        <main className='p-8 bg-white text-blue-500 min-h-screen mt-16'>{children}</main>
+        <main className='p-8 bg-white dark:bg-slate-800 text-blue-500 min-h-screen mt-16'>{children}</main>
         {/* main */}
       </div>
     </div>

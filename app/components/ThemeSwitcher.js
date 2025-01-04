@@ -18,7 +18,7 @@ export const ThemeChanger = () => {
     }
 
     return (
-        <button className={`w-fit p-2 rounded-md hover:scae-110 active:scale-100 duration-200 bg-slate-200 dark:bg-red-600`} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+        <button className={`w-fit p-2 rounded-md hover:scae-110 active:scale-100 duration-200 dark:text-green-600 text-lime-500`} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
             {theme === 'light' ? <Moon/> : <Sun/>}
         </button>
     )
