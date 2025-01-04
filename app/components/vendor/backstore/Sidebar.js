@@ -16,7 +16,7 @@ export default function Sidebar() {
   return (
 
     <nav className=''>
-      <div className='bg-blue-700 w-60 h-screen text-blue-50 p-3 fixed left-0 top-0 shadow-md overflow-y-auto mb-3'>
+      <div className='bg-blue-500 dark:bg-gray-700 w-60 h-screen text-blue-50 p-3 fixed left-0 top-0 shadow-md overflow-y-auto mb-3'>
         <div>
           <Link href="#" className=''>
             <img className='' src="/assets/logo.png" alt="" />
