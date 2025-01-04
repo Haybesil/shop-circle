@@ -3,10 +3,15 @@
 import { ThemeProvider } from "next-themes";
 
 
-export const ThemeProvider = ({ children }) => {
+export const ThemeProviders = ({ children }) => {
     return (
-        <ThemeProvider attribute='class'>
-            {children}
-        </ThemeProvider>
+        <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        {children}
+      </ThemeProvider>
     )
 }
