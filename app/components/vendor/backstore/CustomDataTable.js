@@ -20,8 +20,8 @@ export default function CustomDataTable() {
 
 
     return (
-        <div className='bg-gray-200 p-8 rounded-lg mt-8'>
-            <h2 className='text-blue-600 text-xl font-bold mb-4'>Recent Orders</h2>
+        <div className='dark:bg-gray-500 bg-gray-200 p-8 rounded-lg mt-8'>
+            <h2 className='text-blue-600 dark:text-gray-50 text-xl font-bold mb-4'>Recent Orders</h2>
 
             {/* Table */}
 
@@ -29,7 +29,7 @@ export default function CustomDataTable() {
 
             <div className="overflow-x-auto shadow-md sm:rounded-lg">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <thead className="text-xs  uppercase bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-200">
                         <tr>
                             <th scope="col" className="p-4">
                                 <div className="flex items-center">
@@ -58,14 +58,14 @@ export default function CustomDataTable() {
                         {
                             currentlyDisplayedData.map((item, i) => {
                                 return (
-                                    <tr key={i} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <tr key={i} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200">
                                         <td className="w-4 p-4">
                                             <div className="flex items-center">
                                                 <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
                                                 <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                                             </div>
                                         </td>
-                                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        <th scope="row" className="px-6 py-4 font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap ">
                                             {item.first_name}
                                         </th>
                                         <td className="px-6 py-4">
@@ -78,7 +78,7 @@ export default function CustomDataTable() {
                                             {item.gender}
                                         </td>
                                         <td className="px-6 py-4">
-                                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                            <a href="#" className="font-medium text-blue-600 dark:text-yellow-500 hover:underline">Edit</a>
                                         </td>
                                     </tr>
                                 )
@@ -92,7 +92,7 @@ export default function CustomDataTable() {
 
                     </tbody>
                 </table>
-                <nav className="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4 pl-4" aria-label="Table navigation">
+                <nav className="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4 pl-4 bg-gray-50 dark:bg-gray-700" aria-label="Table navigation">
                     <span className="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing <span className="font-semibold text-gray-900 dark:text-white">{itemStartIndex}-{itemEndIndex}</span> of <span className="font-semibold text-gray-900 dark:text-white">{data.length}</span></span>
                     <ul className="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8 mb-2 mr-2">
                         <li>
