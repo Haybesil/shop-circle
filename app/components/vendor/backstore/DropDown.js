@@ -42,7 +42,7 @@ export function CatalogueDropDown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="">
-        <div className="inline-flex items-center px-4 py-3 text-white bg-blue-600 rounded-lg active w-full">
+        <div className="inline-flex items-center px-4 py-3 text-white bg-blue-700 rounded-lg active w-full">
           <img className="w-4 h-4 me-2" src="/assets/catalogue.svg" alt="" />
           <button
             variant="outline"
