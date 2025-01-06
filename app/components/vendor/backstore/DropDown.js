@@ -93,7 +93,7 @@ export const ProfileDropDown = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="">
-        <div className="inline-flex items-center py-3 text-white  rounded-lg active w-full">
+        <div className="inline-flex items-center py-3 text-white rounded-lg active w-full">
           <button
             variant="outline"
             className=""
@@ -103,7 +103,7 @@ export const ProfileDropDown = () => {
         </div>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="w-56 mr-5">
+      <DropdownMenuContent className="w-56 mr-5 bg-gray-50 dark:bg-gray-800">
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
@@ -164,9 +164,9 @@ export function NotificationDropDown() {
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className='bg-gray-50 w-96 mr-11'>
-        <DropdownMenuLabel className="block px-4 py-2 font-medium text-center text-gray-700 rounded-t-lg bg-gray-50 dark:bg-gray-800 dark:text-white">Notifications</DropdownMenuLabel>
+        <DropdownMenuLabel className="block px-4 py-2 font-medium text-center  rounded-t-lg bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-white">Notifications</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className='flex'>
+        <DropdownMenuItem className='flex bg-gray-50 dark:bg-gray-800'>
           <div>
             <img className="rounded-full w-11 h-11" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image" />
           </div>
@@ -179,7 +179,7 @@ export function NotificationDropDown() {
           </button>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className='flex'>
+        <DropdownMenuItem className='flex bg-gray-50 dark:bg-gray-800'>
           <div>
             <img className="rounded-full w-11 h-11" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image" />
           </div>
@@ -192,7 +192,7 @@ export function NotificationDropDown() {
           </button>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className='flex'>
+        <DropdownMenuItem className='flex bg-gray-50 dark:bg-gray-800'>
           <div>
             <img className="rounded-full w-11 h-11" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image" />
           </div>
@@ -205,7 +205,7 @@ export function NotificationDropDown() {
           </button>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className='flex'>
+        <DropdownMenuItem className='flex bg-gray-50 dark:bg-gray-800'>
           <div>
             <img className="rounded-full w-11 h-11" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image" />
           </div>
@@ -218,7 +218,7 @@ export function NotificationDropDown() {
           </button>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className='flex justify-center'>
+        <DropdownMenuItem className='flex justify-center bg-gray-50 dark:bg-gray-800'>
           <div className="inline-flex items-center ">
             <svg className="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
               <path d="M10 0C4.612 0 0 5.336 0 7c0 1.742 3.546 7 10 7 6.454 0 10-5.258 10-7 0-1.664-4.612-7-10-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" />
