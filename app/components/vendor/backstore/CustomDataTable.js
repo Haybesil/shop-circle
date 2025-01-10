@@ -66,7 +66,7 @@ export default function CustomDataTable() {
                                             </div>
                                         </td>
                                         <th scope="row" className="px-6 py-4 font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap ">
-                                            {item.first_name}
+                                            {item.product_name}
                                         </th>
                                         <td className="px-6 py-4">
                                             {item.color}
