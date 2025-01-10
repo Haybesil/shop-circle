@@ -72,7 +72,7 @@ export default function CustomDataTable() {
                                             {item.last_name}
                                         </td>
                                         <td className="px-6 py-4">
-                                            {item.email}
+                                            {item.category}
                                         </td>
                                         <td className="px-6 py-4">
                                             {item.gender}
