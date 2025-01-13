@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import data from '../../../../data.json'
+
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function CustomDataTable() {
